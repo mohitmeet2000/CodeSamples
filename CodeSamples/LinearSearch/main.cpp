@@ -28,7 +28,7 @@ int main()
     if(result)
         printf("number exists");
     else
-       printf("bhag sale");
+       printf("not exist");
 
     
     return 0;
