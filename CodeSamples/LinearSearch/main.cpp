@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <assert.h>
 
-bool search(int number1 , int arr1[], int size)
+bool search(int key , int arr1[], int size)
 {
    for(int i=0;i<size;i++)
     {
-       if(number1==arr1[i])
+       if(key==arr1[i])
            return true;           
     }
     return false;
@@ -13,7 +13,6 @@ bool search(int number1 , int arr1[], int size)
 
 int main()
 {   
-    bool result;
     int number;
     const int max_value = 10;
     int arr[max_value];
@@ -24,13 +23,10 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    result=search(number,arr,count);
-    if(result)
+    if(search(number,arr,count))
         printf("number exists");
     else
        printf("not exist");
-
-    
     return 0;
 }    
         
