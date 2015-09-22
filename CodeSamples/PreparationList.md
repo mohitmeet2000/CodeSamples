@@ -1,7 +1,7 @@
 | Topic                                                                                                       | Completed | Remarks                                                                 |
 |-------------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------|
 | Linear search                                                                                               | yes       | Made mistakes while returning from function                             |
-| Binary Search(iterative)                                                                                    |           |                                                                         |
+| Binary Search(iterative)                                                                                    | yes       |                                                                         |
 | Sorting algorithms (Basic)                                                                                  |           | To cover selection,bubble and insertion sort                            |
 | Sorting algorithms (Advanced)                                                                               |           | To cover quick sort and merge sort                                      |
 | First checkpoint (Solve  5 question from leetcode)                                                          |           |                                                                         |
