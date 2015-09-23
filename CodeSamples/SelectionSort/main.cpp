@@ -33,6 +33,5 @@ int size=10;
 x= selectionSort(arr,size);
 for(int i=0;i<size;i++)
 printf("%d",x[i]);	
-	
 return 0;	
 } 
