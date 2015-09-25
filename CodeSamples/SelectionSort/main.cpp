@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int *selectionSort(int arr1[], int size)
+int selectionSort(int arr1[], int size)
 {
 	int min;
 		
@@ -19,8 +19,6 @@ int *selectionSort(int arr1[], int size)
 	
 		
 	}
-
-
 return arr1; 	
 }
 	
