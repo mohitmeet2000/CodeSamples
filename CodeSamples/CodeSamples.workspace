@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CodeSamples" Database="">
-  <Project Name="LinearSearch" Path="LinearSearch/LinearSearch.project" Active="Yes"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
-      <Project Name="LinearSearch" ConfigName="Debug"/>
-    </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="LinearSearch" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
+  <Project Name="LinearSearch" Path="LinearSearch/LinearSearch.project" Active="No"/>
   <Environment>
     <![CDATA[]]>
   </Environment>
+  <Project Name="BinarySearch" Path="BinarySearch/BinarySearch.project" Active="No"/>
+  <Project Name="SelectionSort" Path="SelectionSort/SelectionSort.project"/>
+  <Project Name="SqRootUsingBinSearch" Path="SqRootUsingBinSearch/SqRootUsingBinSearch.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="LinearSearch" ConfigName="Debug"/>
+      <Project Name="BinarySearch" ConfigName="Debug"/>
+      <Project Name="SelectionSort" ConfigName="Debug"/>
+      <Project Name="SqRootUsingBinSearch" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="LinearSearch" ConfigName="Release"/>
+      <Project Name="BinarySearch" ConfigName="Release"/>
+      <Project Name="SelectionSort" ConfigName="Release"/>
+      <Project Name="SqRootUsingBinSearch" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
 </CodeLite_Workspace>

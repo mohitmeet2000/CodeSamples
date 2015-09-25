@@ -3,10 +3,10 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=SelectionSort
+ProjectName            :=LinearSearch
 ConfigurationName      :=Debug
 WorkspacePath          := "C:\Users\Mohit\CodeSamples\CodeSamples"
-ProjectPath            := "C:\Users\Mohit\CodeSamples\CodeSamples\SelectionSort"
+ProjectPath            := "C:\Users\Mohit\CodeSamples\CodeSamples\LinearSearch"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -32,12 +32,12 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="SelectionSort.txt"
+ObjectsFileList        :="LinearSearch.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
 RcCompilerName         :=C:/MinGW/bin/windres.exe
-LinkOptions            :=  
+LinkOptions            :=  -static
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/linear_Search.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Mohit/CodeSamples/CodeSamples/SelectionSort/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
+$(IntermediateDirectory)/linear_Search.cpp$(ObjectSuffix): linear_Search.cpp $(IntermediateDirectory)/linear_Search.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Mohit/CodeSamples/CodeSamples/LinearSearch/linear_Search.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/linear_Search.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/linear_Search.cpp$(DependSuffix): linear_Search.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/linear_Search.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/linear_Search.cpp$(DependSuffix) -MM "linear_Search.cpp"
 
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+$(IntermediateDirectory)/linear_Search.cpp$(PreprocessSuffix): linear_Search.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/linear_Search.cpp$(PreprocessSuffix) "linear_Search.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
