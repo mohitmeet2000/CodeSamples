@@ -2,7 +2,7 @@
 |-------------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------|
 | Linear search                                                                                               | yes       | Made mistakes while returning from function                             |
 | Binary Search(iterative)                                                                                    | yes       |                                                                         |
-| Sorting algorithms (Basic)                                                                                  |           | To cover selection,bubble and insertion sort                            |
+| Sorting algorithms (Basic)                                                                                  | yes       | To cover selection,bubble and insertion sort                            |
 | Sorting algorithms (Advanced)                                                                               |           | To cover quick sort and merge sort                                      |
 | First checkpoint (Solve  5 question from leetcode)                                                          |           |                                                                         |
 | Recursion (Tower of hanoi, fibonacci, factorial)                                                            |           | At this point should be familiar with creating functions, modular code  |
