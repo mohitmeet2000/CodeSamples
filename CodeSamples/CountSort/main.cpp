@@ -34,7 +34,7 @@ return arr2;
 }
 int main()
 { 
-	int arr[]={5,9,2,6,2,1};
+	int arr[]={5,9,2,6,2,100};
     int size=6;
     int *sortedArray= Sort(arr,size);
 	//for(int i=0;i<size;i++)
