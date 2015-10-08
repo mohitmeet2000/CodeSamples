@@ -19,11 +19,10 @@ int *sortarray(int arr2[], int length)
 }
 bool checkarray(int arr3[],int size)
 {
-    for(int i=0;i<size-2;i++)
+    for(int i=0;i<size-1;++i)
     {
-        if(arr3[i]<=arr3[i+1]);
-        else 
-        return false;
+        if(arr3[i]>arr3[i+1]) 
+            return false;
    }
     return true;
 }
@@ -36,6 +35,18 @@ int main()
         assert(checkarray(arr1,size));
         //for(int i=0;i<size;i++)
         //printf("%d",arr1[i]);
-
+        int arr2[] = {0,0,0,0};
+        size = sizeof(arr2)/sizeof(int);
+        sortarray(arr2,size);
+        assert(checkarray(arr2, size));
+        int arr3[] = {0,0,0,0};
+        size = sizeof(arr3)/sizeof(int);
+        sortarray(arr3,size);
+        assert(checkarray(arr3, size));
+        int arr4[] = {0};
+        size = sizeof(arr4)/sizeof(int);
+        sortarray(arr4,size);
+        assert(checkarray(arr4, size));
+        
         return 0;
     }
