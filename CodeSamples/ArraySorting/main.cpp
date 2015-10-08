@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 int *sortarray(int arr2[], int length)
     {
         int low=0;
@@ -16,15 +17,25 @@ int *sortarray(int arr2[], int length)
         }      
     return arr2;
 }
-
+bool checkarray(int arr3[],int size)
+{
+    for(int i=0;i<size-2;i++)
+    {
+        if(arr3[i]<=arr3[i+1]);
+        else 
+        return false;
+   }
+    return true;
+}
 int main()
     {
         
         int arr[]={1,0,1,0,1,0,1,0,0,0};
         int size=sizeof(arr)/sizeof(int);
         int *arr1=sortarray(arr,size);
-        for(int i=0;i<size;i++)
-        printf("%d",arr1[i]);
+        assert(checkarray(arr1,size));
+        //for(int i=0;i<size;i++)
+        //printf("%d",arr1[i]);
 
         return 0;
     }
