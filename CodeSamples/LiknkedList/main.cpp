@@ -4,13 +4,42 @@ struct node
 {
     int data;
     struct node *next;
-};
-int *insertNode()
+}*first=NULL,*last=NULL,*temp=NULL,*ptr=NULL;
+struct node *insertNode()
+{
+  printf("Enter the data of the node");
+    temp=(struct node*)malloc(sizeof(struct node));
+    temp->next=NULL;
+    scanf("%d",&temp->data);
+    if(first==NULL)
+    {
+        first=temp;
+        last=temp;
+    }
+    else
+    {
+        last->next=temp;
+        last=temp;
+    }
+        return first;
+}
+
+void display()
 {
 
-}
-int *deleteNode()
-{
+if (first == NULL)
+    {
+        
+        printf(":No nodes in the list to display\n");
+    }
+else
+    {
+        for (ptr = first;ptr != NULL;ptr = ptr->next)
+        {    
+            printf("%d\t", ptr->data);
+        }
+    }
+
 
 }
 
@@ -18,8 +47,8 @@ int main()
 {int input;
 	do{
     
-    printf( "1. Insert\n" );
-    printf( "2. Delete\n" );
+    printf( "\n1. Insert\n" );
+    printf( "2. Display\n" );
     printf( "0. Exit\n" );
     scanf( "%d", &input );
 
@@ -27,12 +56,13 @@ switch(input)
 {
     case 1:            /* Note the colon, not a semicolon */
             insertNode();
+                
             break;
     case 2:          
-            deleteNode();
+            display();
             break;
 
-    case 3: 
+    case 0: 
             break;
             
     
