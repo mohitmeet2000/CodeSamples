@@ -5,7 +5,8 @@ struct node
     int data;
     struct node *next;
 }*first=NULL,*last=NULL,*temp=NULL,*ptr=NULL;
-struct node *insertNode()
+void display();
+void insertNode()
 {
   printf("Enter the data of the node");
     temp=(struct node*)malloc(sizeof(struct node));
@@ -21,9 +22,31 @@ struct node *insertNode()
         last->next=temp;
         last=temp;
     }
-        return first;
+        //return first;tr
 }
+void getreverse()
+{   struct node *extra,*temp1;
+    if(first==NULL||first->next==NULL){
+    display();
+}else{
+    temp=first;
+    extra=first->next;
+    temp->next=NULL;
+while(extra->next!=NULL)
+{
+    first=extra;
+    extra=extra->next;
+    first->next=temp;
+    temp=first;
 
+}
+extra->next=first;
+first=extra;
+   display(); 
+    
+
+}
+}
 void display()
 {
 
@@ -49,7 +72,9 @@ int main()
     
     printf( "\n1. Insert\n" );
     printf( "2. Display\n" );
-    printf( "0. Exit\n" );
+    printf( "3. Reverse\n" );
+    printf( "0. Exist\n" );
+    
     scanf( "%d", &input );
 
 switch(input)
@@ -62,13 +87,16 @@ switch(input)
             display();
             break;
 
+    case 3: 
+            getreverse();
+            break;
     case 0: 
             break;
             
     
 }
-}while(input!=0);
-    	
+}
+while(input!=0);
 return 0;
 
 }
