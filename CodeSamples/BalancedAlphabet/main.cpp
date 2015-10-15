@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <assert.h>
 bool check(char *p)
 {	int i=0;
     int count=0;
@@ -17,16 +17,17 @@ bool check(char *p)
 			
 			i++;
 	}
-if (count==0)
-	printf("correct");
-		else 
-	printf("incorrect");
+
+   return (count == 0);
 }
 
 int main()
 {
-	char * s= "aabb";
-	bool result=check(s);
-	//printf("%c",result);
+	assert(check("aabb"));
+	assert(check(""));
+	assert(!check("baba"));
+	assert(check("aaabbb"));
+	assert(!check("b"));
+	assert(!check("a"));
 	return 0;
 }
