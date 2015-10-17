@@ -5,20 +5,41 @@
     <![CDATA[]]>
   </Environment>
   <Project Name="BinarySearch" Path="BinarySearch/BinarySearch.project" Active="No"/>
-  <Project Name="SelectionSort" Path="SelectionSort/SelectionSort.project"/>
-  <Project Name="SqRootUsingBinSearch" Path="SqRootUsingBinSearch/SqRootUsingBinSearch.project" Active="Yes"/>
+  <Project Name="SelectionSort" Path="SelectionSort/SelectionSort.project" Active="No"/>
+  <Project Name="SqRootUsingBinSearch" Path="SqRootUsingBinSearch/SqRootUsingBinSearch.project" Active="No"/>
+  <Project Name="InsertionSort" Path="InsertionSort/InsertionSort.project" Active="No"/>
+  <Project Name="BubbleSort" Path="BubbleSort/BubbleSort.project" Active="No"/>
+  <Project Name="CountSort" Path="CountSort/CountSort.project" Active="No"/>
+  <Project Name="ArraySorting" Path="ArraySorting/ArraySorting.project" Active="No"/>
+  <Project Name="BalancedAlphabet" Path="BalancedAlphabet/BalancedAlphabet.project" Active="No"/>
+  <Project Name="LiknkedList" Path="LiknkedList/LiknkedList.project" Active="No"/>
+  <Project Name="CountChar" Path="CountChar/CountChar.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="LinearSearch" ConfigName="Debug"/>
       <Project Name="BinarySearch" ConfigName="Debug"/>
       <Project Name="SelectionSort" ConfigName="Debug"/>
       <Project Name="SqRootUsingBinSearch" ConfigName="Debug"/>
+      <Project Name="InsertionSort" ConfigName="Debug"/>
+      <Project Name="BubbleSort" ConfigName="Debug"/>
+      <Project Name="CountSort" ConfigName="Debug"/>
+      <Project Name="ArraySorting" ConfigName="Debug"/>
+      <Project Name="BalancedAlphabet" ConfigName="Debug"/>
+      <Project Name="LiknkedList" ConfigName="Debug"/>
+      <Project Name="CountChar" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="LinearSearch" ConfigName="Release"/>
       <Project Name="BinarySearch" ConfigName="Release"/>
       <Project Name="SelectionSort" ConfigName="Release"/>
       <Project Name="SqRootUsingBinSearch" ConfigName="Release"/>
+      <Project Name="InsertionSort" ConfigName="Release"/>
+      <Project Name="BubbleSort" ConfigName="Release"/>
+      <Project Name="CountSort" ConfigName="Release"/>
+      <Project Name="ArraySorting" ConfigName="Release"/>
+      <Project Name="BalancedAlphabet" ConfigName="Release"/>
+      <Project Name="LiknkedList" ConfigName="Release"/>
+      <Project Name="CountChar" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
